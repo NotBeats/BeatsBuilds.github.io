@@ -1,11 +1,17 @@
 # The URL the site will be built for
-base_url = "https://beats.me"
+base_url = "https://notbeats.github.io/BeatsBuilds.github.io/"
+
+taxonomies = [
+    {name = "tags"}
+]
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
+
+generate_feeds = true
 
 [markdown]
 # Whether to do syntax highlighting
@@ -14,3 +20,30 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+title_separator = "-"
+
+menu = [{ url = "/about", name = "About" }, { url = "/tags", name = "Tags" }]
+
+edit_page = true
+
+# Social links
+social_links = [
+  { platform = "email", user_id = "johndoe@example.com" },
+  { platform = "github", user_id = "johndoe" },
+  { platform = "linkedin", user_id = "johndoe" },
+  { platform = "feed", user_id = true },
+  { platform = "keyoxide", user_id = "aspe:host:XXXXXXX" },
+  # { platform = "facebook", user_id = "" },
+  # { platform = "instagram", user_id = "" },
+  # { platform = "pinterest", user_id = "" },
+  # { platform = "twitter", user_id = "" },
+  # { platform = "stackoverflow", user_id = "" },
+  # { platform = "youtube", user_id = "" },
+  # { platform = "telegram", user_id = "" },
+]
+
+# GitHub settings that are used to generate the edit page link
+[extra.github]
+username = "NotBeats"
+repo = "BeatsBuilds.github.io"
+
